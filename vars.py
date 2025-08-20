@@ -3,22 +3,23 @@
 import os
 from os import environ
 
-API_ID = int(environ.get("API_ID", "26184715"))
-API_HASH = environ.get("API_HASH", "7fc42fe25c89660b4e0b00dd7aa0beb1")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8410957916:AAHRHjMAbdBNvGbfyCtaSo0BxErqcLZkiTg")
+API_ID = int(environ.get("API_ID", "29978901"))
+API_HASH = environ.get("API_HASH", "500fc876c5356cf04ed3698912dc2edf")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-OWNER = int(environ.get("OWNER", "1182777261"))
+OWNER = int(environ.get("OWNER", "5776977809"))
 CREDIT = environ.get("CREDIT", "@GABBARBHAIYA")
 
-TOTAL_USER = os.environ.get('TOTAL_USERS', '5680454765').split(',')
+TOTAL_USER = os.environ.get('TOTAL_USERS', '5776977809').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '5776977809').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
   
 #WEBHOOK = True  # Don't change this
 #PORT = int(os.environ.get("PORT", 8080))  # Default to 8000 if not set
+
 
 
